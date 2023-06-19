@@ -1,5 +1,4 @@
 "use client"
-import Row from "@/Components/std/Row";
 import style from "./page.module.css"
 import User from "../user"
 import { useState } from "react";
