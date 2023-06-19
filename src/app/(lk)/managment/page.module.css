@@ -22,10 +22,6 @@
     cursor: pointer;
 }
 
-.title_page:hover {
-    color: var(--accent);
-}
-
 .title_name {
     color: var(--bodycopy);
     margin: 2rem 0;
@@ -40,21 +36,6 @@
     width: 400px;
     height: 300px;
     border-radius: .2rem;
-    transition: all 1s;
-}
-
-.card:hover {
-    background-color: var(--accent);
-    transition: all 1s;
-}
-
-.card:hover .count {
-    color: var(--bodycopy);
-    transition: all 1s;
-}
-
-.card:hover .description {
-    color: var(--bodycopy);
     transition: all 1s;
 }
 
@@ -130,10 +111,6 @@
     font-size: 1.05rem;
     font-weight: bold;
     letter-spacing: .05rem;
-}
-
-.send:hover {
-    background: rgb(22, 73, 150);
 }
 
 .input {

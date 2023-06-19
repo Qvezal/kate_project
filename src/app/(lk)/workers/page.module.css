@@ -21,10 +21,6 @@
     text-align: center;
 }
 
-.title_page:hover {
-    color: var(--accent);
-}
-
 .title_name {
     color: var(--bodycopy);
     margin: 2rem 0;
@@ -39,21 +35,6 @@
     width: 400px;
     height: 300px;
     border-radius: .2rem;
-    transition: all 1s;
-}
-
-.card:hover {
-    background-color: var(--accent);
-    transition: all 1s;
-}
-
-.card:hover .count {
-    color: var(--bodycopy);
-    transition: all 1s;
-}
-
-.card:hover .description {
-    color: var(--bodycopy);
     transition: all 1s;
 }
 
