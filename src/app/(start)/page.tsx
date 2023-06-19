@@ -42,6 +42,7 @@ export default function Home() {
       <Link href="/login">
         <Button>Войти</Button>
       </Link>
+      <Spacer top="2"/>
     </Container>
   )
 }
