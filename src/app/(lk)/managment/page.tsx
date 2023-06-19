@@ -80,12 +80,11 @@ export default function Dashboard() {
         <div className={style.page}>
             <h1 className={style.title_name}>Управление</h1>
             {visible_sell &&
-                <div className={style.form} id="sell">
+                <div id="sell">
                     <select
                         name="seller"
                         placeholder="Имя сотрудника"
                         onChange={handle_sell}
-                        className={style.select}
                     >
                         <option value={0}>Выберите сотрудника</option>
                         {options}
@@ -95,31 +94,28 @@ export default function Dashboard() {
                         placeholder="Сумма"
                         onChange={handle_sell}
                         type="tel"
-                        className={style.input}
                     />
-                    <button className={style.send} onClick={() => {send_data("sell")}}>Добавить</button>
+                    <button onClick={() => {send_data("sell")}}>Добавить</button>
                 </div>
             }
-            <h3 className={style.title_page} onClick={() =>{set_visible_worker(false);set_visible_sell(!visible_sell)}}>{visible_sell? "Скрыть" : "Добавить продажу"}</h3>
+            <h3 onClick={() =>{set_visible_worker(false);set_visible_sell(!visible_sell)}}>{visible_sell? "Скрыть" : "Добавить продажу"}</h3>
             {visible_worker &&
-                <div className={style.form} id="seller">
+                <div id="seller">
                     <Input
                         name="name"
                         placeholder="Имя сотрудника"
                         onChange={handle_worker}
-                        className={style.input}
                     />
                     <Input
                         name="phone"
                         placeholder="79000000000"
                         onChange={handle_worker}
                         type="tel"
-                        className={style.input}
                     />
-                    <button className={style.send} onClick={() => {send_data("worker")}}>Добавить</button>
+                    <button onClick={() => {send_data("worker")}}>Добавить</button>
                 </div>
             }
-            <h3 className={style.title_page} onClick={() =>{set_visible_sell(false);set_visible_worker(!visible_worker)}}>{visible_worker? "Скрыть" : "Добавить работника"}</h3>
+            <h3 onClick={() =>{set_visible_sell(false);set_visible_worker(!visible_worker)}}>{visible_worker? "Скрыть" : "Добавить работника"}</h3>
             <Spacer top="5"/>
         </div>
     )

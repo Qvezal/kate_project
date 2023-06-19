@@ -71,48 +71,41 @@ export default function conversions() {
 
     return (
         <div className={style.page}>
-            <h1 className={style.title_name}>Продажи</h1>
-            <h3 className={style.title}>
-                Статистика за
-                <select className={style.select} value={period} onChange={handle_change}>
+            <h1 className={style.title_name}>Продажи</h1>   
+            Статистика за <select className={style.select} value={period} onChange={handle_change}>
                     <option value="day">день</option>
                     <option value="month">месяц</option>
                     <option value="year">год</option>
                     <option value="all">все время</option>
-                </select>
-                - <span className={style.span}>{sells.length}</span> {translate(Number(sells.length), "prod")}
-            </h3>
+                </select> - {sells.length} {translate(Number(sells.length), "prod")}
+
             {visible &&
-            <div className={style.table}>
-                <Row className={style.table_row}>
-                    <h3 className={style.table_header + " " + style.left}>Продавец</h3>
-                    <h3 className={style.table_header + " " + style.center}>Сумма</h3>
-                    <h3 className={style.table_header + " " + style.right}>Дата</h3>
-                </Row>
-                <div className={style.hr}></div>
+            <table>
+                <tr>
+                    <td>Продавец</td>
+                    <td>Сумма</td>
+                    <td>Дата</td>
+                </tr>
                 {
                     //@ts-ignore
                     sells.map(el => {
                         return(
-                            <>
-                                <Row className={style.table_row}>
-                                    <h3 className={style.table_header + " " + style.left}>
+                                <tr>
+                                    <td>
                                         {
                                             //@ts-ignore
                                             data.Seller.find(per => per.id === el.sellerId).name
                                         }
-                                    </h3>
-                                    <h3 className={style.table_header + " " + style.center}>{el.amount} рублей</h3>
-                                    <h3 className={style.table_header + " " + style.right}>{new Date(el.time).toLocaleString()}</h3>
-                                </Row>
-                                <div className={style.hr}></div>
-                            </>
+                                    </td>
+                                    <td>{el.amount} рублей</td>
+                                    <td>{new Date(el.time).toLocaleString()}</td>
+                                </tr>
                         )
                     }).reverse()
                 }
-            </div>
+            </table>
             }
-            <h3 className={style.title_page} onClick={() =>{set_visible(!visible)}}>{visible? "Скрыть" : "Показать все"}</h3>
+            <h3 onClick={() =>{set_visible(!visible)}}>{visible? "Скрыть" : "Показать все"}</h3>
 
             <Spacer top="5"/>
         </div>

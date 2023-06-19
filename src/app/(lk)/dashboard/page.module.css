@@ -2,15 +2,6 @@
     min-height: 91.5vh;
 }
 
-.title {
-    color: var(--background-header);
-    background-color: var(--bodycopy);
-    padding: 2rem 1em;
-    margin: 2rem 0;
-    border-radius: .2rem;
-    font-size: 2rem;
-}
-
 .managment {
     color: var(--background-header);
     background-color: var(--bodycopy);
@@ -24,40 +15,6 @@
 .title_name {
     color: var(--bodycopy);
     margin: 2rem 0;
-}
-
-.card {
-    background-color: var(--bodycopy);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 300px;
-    border-radius: .2rem;
-    transition: all 1s;
-}
-
-.count {
-    color: var(--accent);
-    transition: all 1s;
-}
-
-.description {
-    color: var(--background-header);
-    transition: all 1s;
-}
-
-.select {
-    color: var(--accent);
-    font-size: 2.2rem;
-    font-weight: bold;
-    width: 200px;
-    line-height: 120%;
-    position: relative;
-    top: -1px;
-    cursor: pointer;
-    appearance: none;
 }
 
 .link {

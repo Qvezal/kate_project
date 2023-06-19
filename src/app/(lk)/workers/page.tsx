@@ -21,12 +21,11 @@ export default function incomings() {
 
         return (
             <>
-                <Row className={style.table_row}>
-                    <h3 className={style.table_header + " " + style.left}>{el.name}</h3>
-                    <a href={"tel:+"+el.phone} className={style.table_header  + " " + style.center}><h3 className={style.phoneh3}>{el.phone}</h3></a>
-                    <h3 className={style.table_header  + " " + style.right}>{count}</h3>
-                </Row>
-                <div className={style.hr}></div>
+                <tr>
+                    <td>{el.name}</td>
+                    <td><a href={"tel:+"+el.phone}><h3>{el.phone}</h3></a></td>
+                    <td>{count}</td>
+                </tr>
             </>
         )
     }).reverse();
@@ -35,17 +34,16 @@ export default function incomings() {
         <div className={style.page}>
             <h1 className={style.title_name}>Работники</h1>
             {visible &&
-            <div className={style.table}>
-                <Row className={style.table_row}>
-                    <h3 className={style.table_header + " " + style.left}>Имя</h3>
-                    <h3 className={style.table_header + " " + style.center}>Телефон</h3>
-                    <h3 className={style.table_header + " " + style.right}>Количество Продаж</h3>
-                </Row>
-                <div className={style.hr}></div>
-                {sellers}
-            </div>
+                <table>
+                    <tr>
+                        <td>Имя</td>
+                        <td>Телефон</td>
+                        <td>Количество Продаж</td>
+                    </tr>
+                    {sellers}
+                </table>
             }
-            <h3 className={style.title_page} onClick={() =>{set_visible(!visible)}}>{visible? "Скрыть" : "Показать все"}</h3>
+            <h3 onClick={() =>{set_visible(!visible)}}>{visible? "Скрыть" : "Показать все"}</h3>
             <Spacer top="5"/>
         </div>
     )

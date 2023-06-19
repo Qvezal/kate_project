@@ -5,34 +5,6 @@
 */
 
 /* 
-	Font Family 
-*/
-
-@font-face {
-	font-family: 'Comfortaa';
-	font-weight: 700;
-	src: local('Comfortaa-Bold'), url('../../assets/fonts/Comfortaa-Bold.ttf');
-}
-
-@font-face {
-	font-family: 'Comfortaa';
-	font-weight: 600;
-	src: local('Comfortaa-SemiBold'), url('../../assets/fonts/Comfortaa-Semibold.ttf');
-}
-
-@font-face {
-	font-family: 'Comfortaa';
-	font-weight: 500;
-	src: local('Comfortaa-Medium'), url('../../assets/fonts/Comfortaa-Medium.ttf');
-}
-
-@font-face {
-	font-family: 'Comfortaa';
-	font-weight: 400;
-	src: local('Comfortaa-Regular'), url('../../assets/fonts/Comfortaa-Regular.ttf');
-}
-
-/* 
 	Headlines
 */
 

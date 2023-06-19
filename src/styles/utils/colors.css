@@ -6,9 +6,9 @@
 
 :root {
   --background-main: #fff;
-  --background-header: #E5989B;
-  --accent:  #FFB4A2;
+  --background-header: #acacac;
+  --accent:  #292929;
   --accent2: #fff;
-  --accent3: #FFCDB2;
-  --bodycopy: #795354;
+  --accent3: #646464;
+  --bodycopy: #ffffff;
 }

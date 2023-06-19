@@ -69,38 +69,19 @@ export default function Dashboard() {
     return(
         <div className={style.page}>
             <h1 className={style.title_name}>{data.name}</h1>
-            <Row className={style.link_row}>
-                <div className={style.link}>
-                    <a href="/managment"><h3 className={style.managment}>Управление</h3></a>
-                    <a href="/workers" className={style.link}>
-                        <div className={style.card}>
-                            <h1 className={style.count}>{data.Seller.length}</h1>
-                            <h2 className={style.description}>{translate(data.Seller.length, "work")}</h2>
-                        </div>
-                    </a>
-                </div>
-                
-
-                <div className={style.link}>
-                    <h3 className={style.title}>
-                        Статистика за
-                        <select className={style.select} value={period} onChange={handle_change}>
-                            <option value="day">день</option>
-                            <option value="month">месяц</option>
-                            <option value="year">год</option>
-                            <option value="all">все время</option>
-                        </select>
-                    </h3>
-                    <a href="/sells" className={style.link}>
-                        <div className={style.card}>
-                            <h1 className={style.count}>{sells.length}</h1>
-                            <h2 className={style.description}>{translate(sells.length, "prod")}</h2>
-                        </div>
-                    </a>
-                </div>
-                
-            </Row>
-
+            Статистика за <select className={style.select} value={period} onChange={handle_change}>
+                <option value="day">день</option>
+                <option value="month">месяц</option>
+                <option value="year">год</option>
+                <option value="all">все время</option>
+            </select>
+            <a href="/managment"><h3 className={style.managment}>Управление</h3></a>
+            <a href="/workers" className={style.link}>
+                <h1 className={style.managment}>{data.Seller.length + " " + translate(data.Seller.length, "work")}</h1>
+            </a>
+            <a href="/sells" className={style.link}>
+                <h1 className={style.managment}>{sells.length + " " + translate(sells.length, "prod")}</h1>
+            </a>
             <Spacer top="5"/>
         </div>
     )
