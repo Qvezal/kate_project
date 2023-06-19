@@ -28,8 +28,6 @@ export default function Sidebar() {
                     </Row>
                 </a>
 
-                <div className={style.line}></div>
-
                 <div className={style.nav}>
                     <a href="/dashboard">
                         <h3 className={path=== "/dashboard" ? style.active : style.link}>Главная</h3>

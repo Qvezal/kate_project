@@ -10,14 +10,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <Row align='start'>
-        <Sidebar/>
-        <div style={{width: "100%"}}>
-          <Container>
-            {children}
-          </Container>
-          <Footer/>
-        </div>
-    </Row>
+    <>
+      <Sidebar/>
+      <div style={{width: "100%"}}>
+        <Container>
+          {children}
+        </Container>
+        <Footer/>
+      </div>
+    </>
+        
   )
 }
