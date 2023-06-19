@@ -1,3 +1,5 @@
+import Header from '@/Components/std/Header'
+import Footer from '@/Components/std/Footer'
 import '@/styles/global.css';
 
 export default function RootLayout({
@@ -6,10 +8,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body style={{background: "var(--accent3)"}}>
+    <>
+        <Header/>
         {children}
-      </body>
-    </html>
+        <Footer/>
+    </>
   )
 }

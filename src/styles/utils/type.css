@@ -1,0 +1,96 @@
+/* 
+----------------------------------------------------------------
+						Typography
+----------------------------------------------------------------
+*/
+
+/* 
+	Font Family 
+*/
+
+@font-face {
+	font-family: 'Comfortaa';
+	font-weight: 700;
+	src: local('Comfortaa-Bold'), url('../../assets/fonts/Comfortaa-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	font-weight: 600;
+	src: local('Comfortaa-SemiBold'), url('../../assets/fonts/Comfortaa-Semibold.ttf');
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	font-weight: 500;
+	src: local('Comfortaa-Medium'), url('../../assets/fonts/Comfortaa-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	font-weight: 400;
+	src: local('Comfortaa-Regular'), url('../../assets/fonts/Comfortaa-Regular.ttf');
+}
+
+/* 
+	Headlines
+*/
+
+h1 {
+	font-weight: 700;
+	font-size: 4.4rem;
+	line-height: 110%;
+	color: var(--bodycopy);
+}
+
+h2 {
+	font-weight: 700;
+    font-size: 7vmin;
+	line-height: 115%;
+	color: var(--bodycopy);
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 1.05rem;
+	line-height: 120%;
+    letter-spacing: 0.05rem;
+	color: var(--bodycopy);
+}
+
+h4 {
+	font-weight: 600;
+	font-size: 0.875rem;
+	color: var(--bodycopy);
+	line-height: 125%;
+}
+
+h5 {
+	font-weight: 600;
+	font-size: 0.6rem;
+	color: var(--bodycopy);
+	line-height: 125%;
+}
+
+@media (min-width: 650px) {
+    h2 {
+        font-size: 2.8rem;
+    }
+}
+
+/* 
+	Body copy 
+*/
+
+p {
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 23px;
+	color: var(--bodycopy);
+	letter-spacing: 0.07rem;
+}
+
+.--v2 {
+	font-weight: 500 !important;
+	color: var(--bodycopy);
+}

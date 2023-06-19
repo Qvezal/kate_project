@@ -1,0 +1,29 @@
+.page {
+    min-height: 100vh;
+}
+
+.description {
+    padding: 1em;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    width: max-content;
+}
+
+.main_text {
+    max-width: 930px;
+}
+
+.sub_text {
+    max-width: 800px;
+}
+
+.plus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 30px 0;
+    gap: 1em;
+    border: 2px solid var(--accent);
+    border-radius: .2rem;
+    padding: 1rem 2em;
+}

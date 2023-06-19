@@ -1,0 +1,127 @@
+.page {
+    min-height: 91.5vh;
+}
+
+.title {
+    color: var(--background-header);
+    background-color: var(--bodycopy);
+    padding: 2rem 1em;
+    margin: 2rem 0;
+    border-radius: .2rem;
+    font-size: 2rem;
+}
+
+.title_page {
+    color: var(--background-header);
+    background-color: var(--bodycopy);
+    padding: 2rem 1em;
+    margin: 2rem 0;
+    border-radius: .2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.title_page:hover {
+    color: var(--accent);
+}
+
+.title_name {
+    color: var(--bodycopy);
+    margin: 2rem 0;
+}
+
+.card {
+    background-color: var(--bodycopy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    border-radius: .2rem;
+    transition: all 1s;
+}
+
+.card:hover {
+    background-color: var(--accent);
+    transition: all 1s;
+}
+
+.card:hover .count {
+    color: var(--bodycopy);
+    transition: all 1s;
+}
+
+.card:hover .description {
+    color: var(--bodycopy);
+    transition: all 1s;
+}
+
+.count {
+    color: var(--accent);
+    transition: all 1s;
+}
+
+.description {
+    color: var(--background-header);
+    transition: all 1s;
+}
+
+.select {
+    color: var(--accent);
+    font-size: 2.2rem;
+    font-weight: bold;
+    width: 130px;
+    line-height: 120%;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+    appearance: none;
+}
+
+.span {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.table {
+    background-color: var(--bodycopy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: .2rem;
+    padding: 1rem 2em;
+}
+
+.table_row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.table_header {
+    color: var(--background-header);
+    flex: 1;
+}
+
+.hr {
+    border: 2px solid var(--background-header);
+    width: 100%;
+    margin: 1rem 0;
+    content: "";
+}
+
+.phoneh3 {
+    color: var(--accent);
+}
+
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
