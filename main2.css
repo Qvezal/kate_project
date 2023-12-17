@@ -1,0 +1,145 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #addbf7;
+}
+
+.store{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stor__item{
+    display: block;
+    width: 350px;
+    height: 410px;
+    padding-bottom: 20px;
+    background-color: #fdfdfd;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.stor__img{
+    align-items: center;
+    position: relative;
+    left:20px;
+}
+
+.stor__name{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.stor__text{
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.stro__btn{
+    letter-spacing: .2em;
+    margin-left: 100px;
+    border:inherit;
+    border-radius: 20px;
+    background-color: #000;
+    color:#c6cfde;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.stro__btn:hover{
+    border: 2px solid black;
+    transition: .2s linear;
+    background-color: white;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgstr{
+    width: 310px;
+    height: 200px;
+}
+
+.strred{
+    width: 310px;
+    height: 180px;
+}
+
+.aergaerg{
+    width: 290px;
+    height: 200px;
+}
+
+.strdddred{
+    width: 310px;
+    height: 240px;
+}
+
+
+/* STOR */
+
+.stor__up{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stro__text{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.search{
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+input[type=text]{
+    clear: both;
+   width:400px;
+   height: 35px;
+   border-radius: 10px 10px 10px 10px;
+   padding-left: 10px;
+   border:1px solid rgba(2, 3, 4, 0.205);
+}
+
+.chos{
+    text-align: center;
+}
+
+.chos__bike{
+    text-decoration: none;
+    border:2px solid #e9edf2;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color:#8d97a5;
+    margin-left: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.chos__bike:hover{
+    transition: .2s linear;
+    background-color: rgb(0, 51, 147);
+    color:white;
+    border-color: rgb(0, 51, 147);
+}
+
+.chos__text{
+    margin-top: -20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}

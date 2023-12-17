@@ -1,0 +1,85 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #addbf7;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.rws__txt{
+    font-size: 40px;
+    letter-spacing: .1em;
+}
+
+.left__btn{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.fa-arrow-left{
+    padding-right: 30px;
+    font-size: 30px;
+}
+
+.rews__cont{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    width: 90%;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rews__cont:first-child{
+    padding-top: 0;
+}
+
+.rews__text{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 50px;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+}
+
+.message__rews{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    flex-wrap: wrap;
+}
+
+.rews__name{
+    color:#180082;
+    margin-left: 5px;
+    position: relative;
+    left:10px;
+    padding-top: 10px;
+}
+
+.mes__rews{
+    justify-content: center;
+    margin-left: 15px;  
+}
+
+.rews__img{
+    width: 50px;
+    float: left;
+    padding-left:5px;
+}
+
+.fa-star{
+   color: #f7ce3a;
+}
+
+.start{
+    margin-left: 18px;
+    padding-top: 10px;
+}

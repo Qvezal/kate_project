@@ -1,0 +1,753 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #addbf7;
+}
+
+
+*,
+*:after,
+*:before{
+box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+}
+ 
+
+.header{
+    background: url(images/лаванда\ на\ фон.jpg) no-repeat top;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+}
+
+.nav__link{
+    vertical-align: top;
+    margin: 0 10px;
+    color:#180082;
+    text-decoration: none;
+    padding: 15px  15px 30px;
+    position: relative;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.nav__link:hover{
+    -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2);
+    color:black;
+    transition: .4s linear;
+
+}
+
+
+.nav__link:first-child{
+    margin-left: 0;
+}
+
+.logo__nav{
+    font-size: 40px;
+    color:#180082;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.logo{
+    padding-left: 70px;
+    cursor: pointer;
+}
+
+.header__info{
+   position: relative;
+   left:190px;
+    padding-top: 150px;
+    z-index: 2;
+}
+
+.russia__text{
+    font-size: 50px;
+    font-weight: 700;
+    color:#180082;
+    font-family: 'Lato', sans-serif;
+}
+
+.text__pay{
+    font-size: 20px;
+    position: relative;
+    bottom: 20px;
+    color:#180082;
+    right: 110px;
+    font-family: 'Lato', sans-serif;
+}
+
+.heder__bike{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__bike{
+    padding: 18px 45px;
+    background-color: inherit;
+    color:#180082;
+    position: relative;
+    border:2px solid #180082;
+    right: 240px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.buybtn{
+    text-decoration: none;
+    color:white;
+}
+
+.btn__bike:hover{
+    font-size: 15px;
+    -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2);
+    transition: .5s linear;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.buybtn:hover{
+    transition: .3s linear;
+}
+
+.heder__img{
+    z-index: 1;
+    padding-right: 200px;
+    max-width: 100px;
+    position: relative;
+    right:720px;
+    top:100px;
+}
+
+.img__bike{
+    max-width: 800px;
+    height: auto;
+}
+
+.rews__text{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+}
+
+.message__rews{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    flex-wrap: wrap;
+}
+
+
+
+.rews__cont{
+    box-shadow: 0px 0px 2px 2px #180082;
+    width: 325px;
+    height: 135px;
+    
+}
+
+.rews__down{
+    padding-top: 40px;
+}
+
+.comments{
+    margin-top: -50px;
+}
+
+.rews__name{
+    color:#180082;
+    margin-left: 5px;
+    position: relative;
+    left:10px;
+}
+
+.mes__rews{
+    justify-content: center;
+    margin-left: 15px;  
+    
+}
+
+.reviews{
+    position: relative;
+    top:-80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.rews__img{
+    width: 40px;
+    float: left;
+    padding-left:5px;
+}
+
+/* STOR */
+
+.stor__up{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stro__text{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.search{
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+input[type=text]{
+    clear: both;
+   width:400px;
+   height: 35px;
+   border-radius: 10px 10px 10px 10px;
+   padding-left: 10px;
+   border:none;
+}
+
+.chos{
+    text-align: center;
+}
+
+.chos__bike{
+    text-decoration: none;
+    border:2px solid #e9edf2;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color:#8d97a5;
+    margin-left: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.chos__bike:hover{
+    transition: .2s linear;
+    background-color: rgba(0, 72, 181, 0.767);
+    color:white;
+    border-color: rgba(0, 72, 181, 0.767);
+}
+
+.chos__text{
+    margin-top: -20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ЕЩЕ */
+
+.more{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    padding-top: 30px;
+}
+
+.more__btn{
+    text-decoration: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    transition: .3s;
+}
+
+.more__btn:hover {
+    border:none;
+    background: rgba(0, 72, 181, 0.767);
+    box-shadow: 0 15px 20px rgba(0, 72, 181, 0.767);
+    color: white;
+    transform: translateY(-7px);
+  }
+
+.store{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stor__item{
+    display: block;
+    width: 350px;
+    height: 410px;
+    padding-bottom: 20px;
+    background-color: #fdfdfd;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.stor__img{
+    align-items: center;
+    position: relative;
+    left:20px;
+}
+
+.stor__name{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.stor__text{
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.stro__btn{
+    letter-spacing: .2em;
+    margin-left: 100px;
+    border:inherit;
+    border-radius: 20px;
+    background-color: #000;
+    color:#c6cfde;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.stro__btn:hover{
+    border: 2px solid black;
+    transition: .2s linear;
+    background-color: white;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgstr{
+    width: 310px;
+    height: 200px;
+}
+
+.strred{
+    width: 310px;
+    height: 180px;
+}
+
+.aergaerg{
+    width: 290px;
+    height: 200px;
+}
+
+.strdddred{
+    width: 310px;
+    height: 240px;
+}
+
+.last{
+    border-bottom: 1px solid black;
+   
+}
+
+.about{
+    padding-top: 30px;
+    
+}
+
+.about__us{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about__text{
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.map{
+    margin-top: -80px;
+}
+
+.abou__mail{
+    margin-top: -50px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.gmail{
+    text-decoration: none;
+    color:#180082;
+    
+}
+
+h4{
+    padding: 10px;
+    margin: 10px;
+}
+
+.tele{
+    text-decoration: none;
+    color:#180082;
+    padding-bottom: -50px;
+}
+
+.social{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 30px;
+}
+
+i{
+    padding-left: 20px;
+    font-size: 50px;
+}
+
+
+.icon{
+    text-decoration: none;
+    color:black;
+    padding-left: 25px;
+}
+
+.icon:hover{
+    color:rgba(0, 72, 181, 0.767);
+    transition: .3s linear;
+}
+
+.help{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.help__input{
+    width: 60%;
+    height: auto;
+    background-color: #95a5ee;   
+    border-radius: 10px;
+}
+
+.help__text{
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    
+}
+
+.help__cont{
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.inputtxt{
+    padding-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+input[type=submit]{
+    display: flex;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.footer{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    padding-top: 100px;
+}
+
+.footer__back{
+    background-color: #180082;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__text{
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    justify-content: center;
+    margin-top: 45px; 
+    display: flex;
+}
+
+.btn__up{
+    color:white;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+@media(max-width:1119px){
+    .img__bike{
+        max-width: 730px;
+    }
+    .strred1{
+        width: 50px;
+        height: auto;
+    }
+    .rews__cont{
+        width: 290px;
+        height: 130px;
+    }
+}
+
+@media(max-width:1010px){
+
+.stor{
+    display: flex;
+}
+    .stor__item{
+        width: 500px;
+    }
+    .rews__cont{
+        width: 280px;
+        height: 150px;
+    }
+    .stor__up{
+        width: 100%;
+    }
+    .stor__item{
+        align-items: center;
+        justify-content: center;
+    }
+    .stor__img{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .stor__name{
+        text-align: center;
+    }
+    .stor__text{
+        text-align: center;
+    }
+    .stro__btn{
+        margin-left: 215px;
+    }
+    .more{
+        margin-right: 0;
+    }
+}
+
+@media(max-width:950px){  
+    .rews__cont{
+        width: 260px;
+        height: 150px;
+    }
+}
+
+
+@media(max-width:880px){ 
+    .rews__cont{
+        width: 240px;
+        height: 150px;
+    }
+    .russia__text{
+        position: relative;
+        right: 110px;
+        font-size: 45px;
+    }
+    .text__pay{
+        font-size: 17px;
+    }
+    .help__input {
+        width: 100%;
+    }
+    .img__map{
+        width: 100%;
+    }
+}
+
+@media(max-width:817px){
+    .rews__cont{
+        width: 220px;
+        height: 170px;
+    }
+}
+
+@media(max-width:738px){
+    .btn__bike{
+        right: 180px;
+    }
+    .nav__link{
+        font-size: 15px;
+        padding: 10px 10px 30px;
+    }
+    .rews__cont{
+        width: 200px;
+        height: 170px;
+    }
+    .heder__img{
+        right: 550px;
+    }
+}
+
+@media(max-width:730px){
+    .message__rews{
+        width: 100%;
+        padding-top: 40px;
+    }
+    .rews__down{
+        padding-top: 0;
+        padding-top: 40px;
+    }
+    .dd{
+        margin-left: -30px;
+    }
+    .rews__cont{
+        width: 400px;
+        height: 130px;
+    }
+    .last{
+        border-bottom: none;
+    }
+    .img__map{
+        width: 100%;
+    }
+    .stro__text{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:675px){
+
+.russia__text{
+    font-size: 40px;
+}
+.text__pay{
+    font-size: 14px;
+}
+.about__text{
+    font-size: 35px;
+}
+}
+
+@media(max-width:645px){
+    .russia__text{
+        font-size: 35px;
+    }
+    .text__pay{
+        font-size: 13px;
+    }
+    .btn__bike{
+        right: 150px;
+    }
+    .nav__link{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:587px){
+    .logo__nav{
+        font-size: 30px;
+    }
+    .stro__text{
+        font-size: 25px;
+    }
+    .header__info{
+        position: relative;
+        left:160px;
+    }
+    .btn__bike{
+        right: 150px;
+    }
+    .footer__text{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:540px){
+    .nav{
+        flex-direction: column;
+    }
+    .nav__link{
+        margin-bottom: -20px;
+        font-size: 15px;
+    }
+    .nav__link:first-child{
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:516px){
+
+.stro__btn{
+    margin-left: 160px;
+}
+.about__text{
+    font-size: 30px;
+    padding-top: -30px;
+}
+.footer__text{
+    font-size: 12px;
+}
+.rews__text{
+    font-size: 40px;
+}
+.heder__img{
+    right: 550px;
+}
+.about__text{
+    font-size: 25px;
+}
+.map{
+    margin-top: -60px;
+}
+}
+
+@media(max-width:516px){
+    .stro__btn{
+        margin-left: 120px;
+    }
+}
